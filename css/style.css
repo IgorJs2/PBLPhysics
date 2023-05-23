@@ -41608,6 +41608,7 @@ a.u-link.u-text-hover-grey-90:hover {
 
 .chart_block{
   width: 90vw;
+  max-width: 1300px;
   display: flex;
   flex-wrap: wrap;
   justify-content: left;
@@ -41649,5 +41650,21 @@ a.u-link.u-text-hover-grey-90:hover {
   position: absolute;
   left: -9999px;
   top: -9999px;
+}
+
+.banner-block {
+  background-color: #333333;
+}
+
+.banner{
+  width: 30% !important;
+  margin: 0 auto !important;
+}
+
+.carousel-item-image {
+  width: 450px;
+  height: 250px;
+  margin: 0 auto;
+  border-radius: 10px;
 }
 
