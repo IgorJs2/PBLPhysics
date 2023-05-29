@@ -146,7 +146,7 @@ function draw_question(querySelector, chartType, id, title) {
   const queryString = encodeURIComponent(querySelector)
 
   const query = new google.visualization.Query(
-    'https://docs.google.com/spreadsheets/d/16PCjjSLWwv__gmY98h361xexvXTxaFzN7Npv7GHtCAY' + '/gviz/tq?gid=0&headers=1&tq=' + queryString);
+    'https://docs.google.com/spreadsheets/d/1QLRg3Co-j1CztRI3CwZ8uIeHpO6eXM4dHqXSXp2Td10' + '/gviz/tq?gid=0&headers=1&tq=' + queryString);
 
   if (chartType == 'pie') {
     query.send(
