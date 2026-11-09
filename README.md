@@ -1,52 +1,16 @@
-# PBLPhysics
+# Plastic Waste — School PBL Website
 
-Requirements to start website:
+> [!WARNING]
+> **DEPRECATED — OLD LEARNING PROJECT (2023).** Archived and no longer maintained. Kept public to show my early progress.
+> For my current production work see [my GitHub profile](https://github.com/IgorJs2) — Metrocraft 2036 and Stalcraft LAB.
 
-1. Linux/Ubuntu 20.04 - Dedicated Server
-2. Node package manager(NPM) Last version
-3. Nginx - Web Server
-4. Domain Name - website.com
-5. SSL Certificate - Certificate created to launch secure connection to domain server. Certificate must be linked to your domain name and be from good provider like google to allow open this website under school protection.
-6. Git - Last version
+A static website made for a project-based learning (PBL) assignment at school about plastic waste. I built the site and deployed it myself on an Ubuntu VPS behind Nginx with an SSL certificate.
 
-Steps to run:
+## Tech stack
+HTML5 Boilerplate, CSS, JavaScript, Nginx, Ubuntu VPS, SSL
 
-1. Rent Dedicated Server 
-2. Get from Host (IP-adress of server)(Password to connect throw SSH)
-3. Open Windows CMD and run "ssh root@(IP-adress)"
-4. Enter password
-5. In CMD follow steps to install Node Package Manager
-
-![image](https://github.com/IgorJs2/PBLPhysics/assets/47695048/27f5d216-db87-432f-bb1a-c261d87d3e68)
-
-6. Install Nginx Web Server https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-22-04
-7. Rent Domain Name and SSL Certificate
-8. In Domain Name Provider Website make redirect from domain name to the webserver follow next guide | https://www.namecheap.com/support/knowledgebase/article.aspx/9678/2237/how-to-redirect-subdomain-to-a-certain-ip-address-along-with-a-port/
-9. Download SSL certificate from provider into local computer
-10. Follow this guide to install SSL to your domain in nginx server https://phoenixnap.com/kb/install-ssl-certificate-nginx
-11. Install git https://www.digitalocean.com/community/tutorials/how-to-install-git-on-ubuntu-20-04
-12. Clone this repository in root folder using command "git clone https://github.com/IgorJs2/PBLPhysics.git"
-13. Enter to the root/PBLPhysics folder and run "npm i"
-14. After run "npm install pm2 -g"
-15. Run "pm2 start npm --name "PBLPhysicsWebsite" -- start"
-16. Go to nginx folder "cd .. | cd .. | cd etc | cd nginx"
-17. run "nano nginx.conf"
-18. Find in file 
-"
-location / {
-  root /var/www/;
-  root  /home/www/public_html/your.domain.com/public/;
-  index index.html;
-}
-"
-
-and change it to "
-
-location / {
- proxy_pass http://127.0.0.1:1234;
-}
-"
-19. run "sudo systemctl restart nginx"
-20. open website using your domain and check result
-
-If you have any problem or troubles with all this steps write to "stalker2sokol2@gmail.com" or "iurmach01@lbpearson.ca" i will try to help or do it by myself.
+## Deployment (as done in 2023)
+1. Rent an Ubuntu 20.04 VPS and connect over SSH.
+2. Install Git, Node.js/npm and Nginx.
+3. Clone the repository into the web root and point an Nginx server block at it.
+4. Attach a domain and issue an SSL certificate (for example with Certbot).
