@@ -1,8 +1,8 @@
-# Plastic Waste — School PBL Website
+# Plastic Waste: school PBL website
 
 > [!WARNING]
-> **DEPRECATED — OLD LEARNING PROJECT (2023).** Archived and no longer maintained. Kept public to show my early progress.
-> For my current production work see [my GitHub profile](https://github.com/IgorJs2) — Metrocraft 2036 and Stalcraft LAB.
+> DEPRECATED: an old learning project (2023). Archived and no longer maintained. I keep it public to show where I started.
+> My current work (Metrocraft 2036 and Stalcraft LAB) is on [my GitHub profile](https://github.com/IgorJs2).
 
 A static website made for a project-based learning (PBL) assignment at school about plastic waste. I built the site and deployed it myself on an Ubuntu VPS behind Nginx with an SSL certificate.
 
